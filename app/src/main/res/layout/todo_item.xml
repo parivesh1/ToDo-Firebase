@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="#d9ad7c"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/d"
+            android:layout_margin="6sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/dlt_btn"
+            android:textSize="20sp" />
+
+
+        <ImageButton
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#d9ad7c"
+            android:src="@drawable/ic_baseline_add_task_24"
+            android:layout_margin="6sp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_margin="6sp"
+            android:id="@+id/dlt_btn"
+            android:backgroundTint="#d9ad7c"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
